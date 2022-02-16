@@ -1,0 +1,219 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+/* Common style */
+body{
+    font-family:  'Poppins', sans-serif;
+}
+header, footer, .slider-section, .catagories-section{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+}
+.button{
+    padding: 16px 28px;
+    background: linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%);
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+.button:hover{
+    background: linear-gradient(152.07deg, #FF9C35 1.47%, #FFD019 97.17%);
+}
+.bg-black{
+    background: black;
+}
+.bg-black:hover{
+    background: linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%);
+    color: white;
+}
+.grid-temp{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5%;
+}
+.shoes-section, .bagpack-section{
+    background: #F4F4F4;
+    padding: 5% 10%;
+}
+.box-shadows{
+    background: white;
+    padding: 24px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px gray;
+}
+.box-shadows img{
+    width: 100%;
+}
+
+/* Header style */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 2%;
+}
+.navigations a{
+    color: #707070;
+    margin-right: 24px;
+}
+.navigations a:hover{
+    color: black;
+}
+.navigations .navbar{
+    display: none;
+}
+
+/* Slider Section Style  */
+.slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FEEAE9;
+    border-radius: 20px;
+    margin-top: 3%;
+    padding: 5%;
+}
+.half-width h1{
+    color: #1F1F1F;
+    font-size: 56px;
+    font-weight: 700;
+}
+.half-width p{
+    color: #4E4E4E;
+    font-size: 16px;
+    font-weight: 400;
+}
+.half-width h2{
+    color: #FF136F;
+    font-size: 41px;
+    font-weight: 500;
+}
+
+.fa-arrow-right-long{
+    color: #1F1F1F;
+}
+.half-width img{
+    width: 400px;
+    height: 380px;
+}
+
+/* Catagories Section Style  */
+.catagories-section{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #1F1F1F;
+}
+.catagorie{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    padding: 0% 5%;
+    border-radius: 10px;
+}
+.catagorie img{
+    width: 68px;
+    height: 90px;
+}
+.cat-watch{
+    background: linear-gradient(152.07deg, #FF9C35 1.47%, #FFD019 97.17%);
+}
+.cat-bag{
+    background: linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%);
+}
+.cat-shoes{
+    background: linear-gradient(170.41deg, #4289FF -10.89%, #3F07F8 92.77%);
+}
+
+/* Footer style  */
+footer{
+    background: #fceae8;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 5%;
+    padding: 5%;
+}
+
+/* ---------------------
+    Media queries 
+------------------------ */
+
+/* Mobile Device */
+@media only screen and (max-width:767px) {
+    header{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .button{
+        padding: 10px 22px;
+    }
+    .navigations .nav-link{
+        display: none;
+    }
+    .navigations .navbar{
+        display: block; 
+        font-size: 16px; 
+    }
+    .slider{
+        flex-direction: column;
+        padding-left: 5%;
+    }
+    .half-width{
+        margin-bottom: 5%;
+    }
+    .half-width h1{
+        font-size: 28px;
+    }
+    .half-width h2{
+        font-size: 22px;
+    }
+    .half-width img{
+        width: 90%;
+    }
+    .grid-temp{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 4%;
+    }
+    .bagpack-section{
+        margin-top: 30%;
+    }
+    footer{
+        margin-top: 50%;
+    }
+}
+
+
+/* Tablet Device */
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .grid-temp{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 5%;
+        column-gap: 5%;
+    }
+    .half-width{
+        width: 50%;
+        padding: 5%;
+    }
+    .half-width h1{
+        font-size: 32px;
+    }
+    .half-width h2{
+        font-size: 28px;
+    }
+    .half-width img{
+        width: 90%;
+    }
+    footer{
+        margin-top: 12%;
+    }
+}
